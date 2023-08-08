@@ -97,3 +97,8 @@ Recuerda reemplazar `{year}` en las URLs con los valores reales que deseas utili
 Utiliza estas URLs en tu navegador web.
 
 Otra opción es usar la interfaz gráfica que nos proporciona FastAPI para llamar a las funciones: https://machine-learning-operations-b55i.onrender.com/docs
+
+![1](images/fastapiui.png)
+![2](images/tryout.png)
+![3](images/executeapi.png)
+![4](images/result.png)
