@@ -32,68 +32,58 @@ A continuación se detallan las diferentes APIs disponibles en el proyecto y có
 
 Esta API devuelve una lista con los 5 géneros más ofrecidos en orden correspondiente según el año.
 
-- **URL**: `https://machine-learning-operations-b55i.onrender.com/docs#/default/get_generos_mas_ofrecidos_generos_mas_ofrecidos__year__get`
+- **URL**: `https://machine-learning-operations.onrender.com/generos_mas_ofrecidos/{year}`
 - **Método**: GET
 - **Parámetros**:
   - `year`: El año a partir del cual obtendrá los géneros más ofrecidos.
-- **Ejemplo de uso**: `https://movies-repository.onrender.com/peliculas_idioma/en`
+- **Ejemplo de uso**: `https://machine-learning-operations.onrender.com/generos_mas_ofrecidos/2017`
 
-### API: `peliculas_duracion`
+### API: `juegos_lanzados`
 
-Esta API devuelve el nombre, su duración en minutos y el año de estreno de una película específica.
+Esta API devuelve una lista de los juegos lanzados en un año determinado.
 
-- **URL**: `https://movies-repository.onrender.com/peliculas_duracion/{pelicula}`
+- **URL**: `https://machine-learning-operations.onrender.com/juegos_lanzados/{year}`
 - **Método**: GET
 - **Parámetros**:
-  - `pelicula`: El nombre de la película para la cual deseas obtener la duración.
-- **Ejemplo de uso**: `https://movies-repository.onrender.com/peliculas_duracion/Jumanji`
+  - `year`: El año a partir del cual obtendrás la lista de juegos que se lanzaron.
+- **Ejemplo de uso**: `https://machine-learning-operations.onrender.com/juegos_lanzados/2016`
 
-### API: `franquicia`
+### API: `especificaciones_comunes`
 
-Esta API devuelve información sobre una franquicia de películas, su nombre, cantidad de películas, ganancias totales y ganancias promedio.
+Esta API devuelve una lista con las 5 especificaciones que más se repiten en determinado año en el orden correspondiente.
 
-- **URL**: `https://movies-repository.onrender.com/franquicia/{franquicia}`
+- **URL**: `https://machine-learning-operations.onrender.com/especificaciones_comunes/{year}`
 - **Método**: GET
 - **Parámetros**:
-  - `franquicia`: El nombre de la franquicia de películas que deseas obtener información. Todas estas franquicias terminan con **Collection**.
-- **Ejemplo de uso**: `https://movies-repository.onrender.com/franquicia/Toy Story Collection`
+  - `year`: El año a partir del cual obtendrás la lista de especificaciones.
+- **Ejemplo de uso**: `https://machine-learning-operations.onrender.com/especificaciones_comunes/2014`
 
-### API: `peliculas_pais`
+### API: `early_acces`
 
-Esta API devuelve la cantidad de películas producidas en el pais especificado.
+Esta API devuelve la cantidad de videojuegos lanzados en determinado año con early acces.
 
-- **URL**: `https://movies-repository.onrender.com/peliculas_pais/{pais}`
+- **URL**: `https://machine-learning-operations.onrender.com/early_access/{year}`
 - **Método**: GET
 - **Parámetros**:
-  - `pais`: El nombre del país para el cual deseas obtener la cantidad de películas producidas.
-- **Ejemplo de uso**: `https://movies-repository.onrender.com/peliculas_pais/United States of America`
+  - `year`: El año a partir del cual obtendrás los videojuegos que se hayan lanzado con early acces.
+- **Ejemplo de uso**: `https://machine-learning-operations.onrender.com/early_access/2015`
 
-### API: `productoras_exitosas`
+### API: `analisis_de_sentimiento`
 
-Esta API devuelve información sobre una productora, su nombre, ganancias totales y la cantidad de peliculas producidas.
+Esta API devuelve una lista con la cantidad de registros que se encuentren categorizados con un análisis de sentimiento según el año.
 
-- **URL**: `https://movies-repository.onrender.com/productoras_exitosas/{productora}`
+- **URL**: `https://machine-learning-operations.onrender.com/analisis_de_sentimiento/{year}`
 - **Método**: GET
 - **Parámetros**:
-  - `productora`: El nombre de la productora de películas que deseas obtener información.
-- **Ejemplo de uso**: `https://movies-repository.onrender.com/productoras_exitosas/Pixar Animation Studios`
+  - `year`: El año a partir del cual obtendrás la lista de registros con un analisis de sentimiento.
+- **Ejemplo de uso**: `https://machine-learning-operations.onrender.com/analisis_de_sentimiento/2016`
 
-### API: `get_director`
+### API: `top_juegos_metascore`
 
-Esta API devuelve información sobre un director de películas, su nombre, el retorno total en sus peliculas y un diccionario con informacion de sus peliculas.
+Esta API devuelve un Top 5 de videojuegos según el año con mayor metascore
 
-- **URL**: `https://movies-repository.onrender.com/get_director/{nombre_director}`
+- **URL**: `https://machine-learning-operations.onrender.com/top_juegos_metascore/{year}`
 - **Método**: GET
 - **Parámetros**:
-  - `nombre_director`: El nombre del director que deseas obtener información.
-- **Ejemplo de uso**: `https://movies-repository.onrender.com/get_director/Steven Spielberg`
-
-### API: `recomendacion`
-
-Esta API devuelve una lista de 5 películas similares al título especificado, en forma de recomendación.
-
-- **URL**: `https://movies-repository.onrender.com/recomendacion/{titulo}`
-- **Método**: GET
-- **Parámetros**:
-  - `titulo`: El título de la película para la cual deseas obtener recomendaciones.
-- **Ejemplo de uso**: `https://movies-repository.onrender.com/recomendacion/Toy Story`
+  - `year`: El año al partir del cual obtendrás el Top 5 de videojuegos según su puntuación.
+- **Ejemplo de uso**: `https://machine-learning-operations.onrender.com/top_juegos_metascore/2017`
