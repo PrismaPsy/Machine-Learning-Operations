@@ -89,3 +89,11 @@ Esta API devuelve un Top 5 de videojuegos según el año con mayor metascore
 - **Parámetros**:
   - `year`: El año al partir del cual obtendrás el Top 5 de videojuegos según su puntuación.
 - **Ejemplo de uso**: `https://machine-learning-operations.onrender.com/top_juegos_metascore/2017`
+
+---
+
+Recuerda reemplazar `{year}` en las URLs con los valores reales que deseas utilizar.
+
+Utiliza estas URLs en tu navegador web.
+
+Otra opción es usar la interfaz gráfica que nos proporciona FastAPI para llamar a las funciones: https://machine-learning-operations-b55i.onrender.com/docs
